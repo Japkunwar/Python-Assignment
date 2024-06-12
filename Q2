@@ -1,0 +1,90 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPgJsPku6uk8v0y06KcsahD",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Japkunwar/Python-Assignment/blob/main/Q2\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "a4IY_Rk_koym",
+        "outputId": "cca056b2-19d1-46f4-89b5-3964692a99ed"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "After adding new entry {8: 8.8}: {1: 5.6, 2: 7.8, 3: 6.6, 4: 8.7, 5: 7.7, 8: 8.8}\n",
+            "After removing key 2: {1: 5.6, 3: 6.6, 4: 8.7, 5: 7.7, 8: 8.8}\n",
+            "Is key 6 present in D? False\n",
+            "Number of elements in D: 5\n",
+            "Sum of all values in D: 37.4\n",
+            "After updating value of key 3 to 7.1: {1: 5.6, 3: 7.1, 4: 8.7, 5: 7.7, 8: 8.8}\n",
+            "Dictionary after clearing all elements: {}\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Initial dictionary\n",
+        "D = {1: 5.6, 2: 7.8, 3: 6.6, 4: 8.7, 5: 7.7}\n",
+        "\n",
+        "# (i) Add new entry in D; key=8 and value is 8.8\n",
+        "D[8] = 8.8\n",
+        "print(\"After adding new entry {8: 8.8}:\", D)\n",
+        "\n",
+        "# (ii) Remove key=2\n",
+        "if 2 in D:\n",
+        "    del D[2]\n",
+        "print(\"After removing key 2:\", D)\n",
+        "\n",
+        "# (iii) Check whether key=6 is present in D\n",
+        "is_key_six_present = 6 in D\n",
+        "print(\"Is key 6 present in D?\", is_key_six_present)\n",
+        "\n",
+        "# (iv) Count the number of elements present in D\n",
+        "num_elements = len(D)\n",
+        "print(\"Number of elements in D:\", num_elements)\n",
+        "\n",
+        "# (v) Add all the values present in D\n",
+        "total_sum = sum(D.values())\n",
+        "print(\"Sum of all values in D:\", total_sum)\n",
+        "\n",
+        "# (vi) Update the value of key 3 to 7.1\n",
+        "if 3 in D:\n",
+        "    D[3] = 7.1\n",
+        "print(\"After updating value of key 3 to 7.1:\", D)\n",
+        "\n",
+        "# (vii) Clear the dictionary\n",
+        "D.clear()\n",
+        "print(\"Dictionary after clearing all elements:\", D)\n"
+      ]
+    }
+  ]
+}
